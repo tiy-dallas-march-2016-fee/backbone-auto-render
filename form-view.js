@@ -5,7 +5,7 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
   var FormView = Backbone.View.extend({
 
     initialize: function() {
-      
+
    },
 
     events: {
@@ -16,27 +16,27 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
 
 
     grabName: function(evt) {
-      if (evt.keyCode === 13) {
+    //  if (evt.keyCode === 13) {
         var name = evt.target.value;
-        this.$('#name').val('');
+      //  this.$('#name').val('');
         this.model.set('name', name)
-      }
+    //  }
     },
 
     grabTitle: function(evt) {
-      if (evt.keyCode === 13) {
+    //  if (evt.keyCode === 13) {
         var title = evt.target.value;
-        this.$('#title').val('');
+      //  this.$('#title').val('');
         this.model.set('title', title)
-      }
+  //    }
     },
 
     grabComment: function(evt) {
-      if (evt.keyCode === 13) {
+    //  if (evt.keyCode === 13) {
         var comment = evt.target.value;
-        this.$('#comment').val('');
+    //    this.$('#comment').val('');
         this.model.set('comment', comment);
-      }
+  //    }
     }
   });
 
