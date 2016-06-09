@@ -4,10 +4,6 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
 
   var FormView = Backbone.View.extend({
 
-    initialize: function() {
-      this.render();
-    },
-
     events: {
       "keyup input" : "inputChanged",
       "keyup textArea" : "inputChanged"
@@ -22,11 +18,8 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
       console.log("title:", titleInput);
       console.log("comment:", commentInput);
 
-    },
-
-    render: function() {
-      console.log("Is this working?");
     }
+
   });
 
   window.Autorender.FormView = FormView;
