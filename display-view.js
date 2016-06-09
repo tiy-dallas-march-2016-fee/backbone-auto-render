@@ -4,7 +4,9 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
 
   var DisplayView = Backbone.View.extend({
 
+
   });
+
 
   context.DisplayView = DisplayView;
 
