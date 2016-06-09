@@ -15,11 +15,9 @@ if (window.Autorender === undefined) { window.Autorender = {}; }
 
     inputChanged: function(evt) {
       var nameInput = this.$("#name").val();
-      this.model.set({name: nameInput});
       var titleInput = this.$("#title").val();
-      this.model.set({title: titleInput});
       var commentInput = this.$("#comment").val();
-      this.model.set({comment: commentInput});
+      this.model.set({name: nameInput, title: titleInput, comment: commentInput});
       console.log("name value:", nameInput);
       console.log("title:", titleInput);
       console.log("comment:", commentInput);
